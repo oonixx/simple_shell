@@ -95,22 +95,22 @@ char *_strchr(char *s, char c)
  *      */
 int _strspn(char *s, char *accept)
 {
-    int index, ji, bool;
+            int index, ji, bool;
 
-    for (index = 0; *(s + index) != '\0'; index++)
-    {
-        bool = 1;
-        for (ji = 0; *(accept + ji) != '\0'; ji++)
-        {
-            if (*(s + index) == *(accept + ji))
-            {
-                bool = 0;
-                break;
-            }
-        }
-        if (bool == 1)
-            break;
-    }
-    return (index);
+                for (index = 0; *(s + index) != '\0'; index++)
+                                    {
+                                                    bool = 1;
+                                                                for (ji = 0; *(accept + ji) != '\0'; ji++)
+                                                                                        {
+                                                                                                                        if (*(s + index) == *(accept + ji))
+                                                                                                                                                            {
+                                                                                                                                                                                            bool = 0;
+                                                                                                                                                                                                                    break;
+                                                                                                                                                                                                                                            }
+                                                                                                                                            }
+                                                                                if (bool == 1)
+                                                                                                                break;
+                                                                                        }
+                            return (index);
 }
 
