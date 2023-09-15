@@ -1,5 +1,5 @@
-#ifndef _MAIN_
-#define _MAIN_
+#ifndef _SHELL_
+#define _SHELL_
 
 #include <fcntl.h>
 #include <signal.h>
