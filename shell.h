@@ -73,6 +73,7 @@ typedef struct line_list_s
  * @next: Pointer to the next node in the list.
  * Description: This structure defines a single linked list used to store variables.
  */
+typedef struct r_var_list
 {
 	int len_var;
 	char *val;
